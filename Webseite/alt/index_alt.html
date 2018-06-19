@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Button für nächstes Bild */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Postion des Buttons */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hover */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Title text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Nummern */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Dots  */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading Animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background-image: url("bilder/header_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.topnav {
+
+    overflow: hidden;
+    background-color: #333;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.slideshow {
+  padding: 30px;
+  text-align: center;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+.fakeimg {
+    /* background-color: #aaa */
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #ff0000;
+    color: white;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  text-decoration: none;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+  text-decoration: none;
+}
+
+.fußzeile {
+  color: white;
+}
+
+hr {
+  background-color:#FF0000;
+  color:#FF0000;
+  border:#FF0000;
+  height:2px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+<body>
+<div class="header">
+  <h1>Tonnick Community</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="regeln.html">Regeln</a>
+  <a href="überuns.html">Über uns</a>
+  <a href="TSN-Ranksystem-1.2.5/stats/index.php">Rang-System</a>
+</div>
+
+<div class="slideshow-container">
+<br>
+<br>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="bilder/slideshow/test1.jpg" style="width:100%">
+  <div class="text">Test 1</div>
+</div>
+<br>
+<br>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="bilder/slideshow/test2.jpg" style="width:100%">
+  <div class="text">Test 2</div>
+</div>
+<br>
+<br>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="bilder/slideshow/test3.jpg" style="width:100%">
+  <div class="text">Test 3</div>
+</div>
+<br>
+<br>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 id="Home">Tonnick Community</h2>
+      <br>
+      <h3>Anstehende Themen:</h3>
+      <br>
+      <img src="bilder/ansteh_themen.jpg" alt="Girl in a jacket" width="350" height="50">
+    </div>
+    <div class="card">
+      <table>
+        <h2>Ansprechpartner</h2>
+        <tr>
+          <th>Funktion</th>
+          <th>Name</th>
+        </tr>
+        <tr>
+          <td>Server Owner</td>
+          <td>Dukes</td>
+        </tr>
+        <tr>
+          <td>Server Co-Owner</td>
+          <td>Hahn</td>
+        </tr>
+        <tr>
+          <td>Server Admin</td>
+          <td>Avi</td>
+        </tr>
+        <tr>
+          <td>Server Admin</td>
+          <td>Simon</td>
+        </tr>
+        <tr>
+          <td>Supporter</td>
+          <td>Jonathan</td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+<div class="rightcolumn">
+    <div class="card">
+      <h2>Support</h2>
+      <h4>Kontaktiere uns bei Fragen im Support!</h4>
+      <br>
+      <a href="ts3server://185.101.94.133?port=9987&channel=• Warte auf Support [ONLINE]" class="button"><span>TS³</span></a>
+      <br>
+      <a href="https://discord.gg/tV2DsYH" class="button"><span>Discord</span></a>
+      <br>
+      <a href="mailto:tonnickcommunity@gmail.com?subject=Kontaktanfrage" class="button"><span>E-Mail</span></a>
+    </div>
+    <div class="card">
+      <h2>TeamSpeak³</h2>
+    <div>
+      <iframe src="http://cache.gametracker.com/components/html0/?host=185.101.94.133:9987&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap=0&currentPlayersHeight=160&showCurrPlayers=1&showTopPlayers=0&showBlogs=0&width=300" frameborder="0" scrolling="no" width="500" height="348"></iframe>
+    </div>
+    <br>
+    <br>
+      <h2>Discord</h2>
+    <div>
+      <iframe src="https://discordapp.com/widget?id=351670759438942210&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="wcom-50ce498070640e7cbe118dedcc4467c9" class="wcom-default w300x250" style="border: 1px solid rgb(255, 0, 0); background-color: rgb(252, 252, 252); border-radius: 0px;"><link rel="stylesheet" href="//cs3.wettercomassets.com/woys/5/css/w.css" media="all"><div class="wcom-city"><a style="color:#000" href="https://www.wetter.com/deutschland/offenburg/DE0007926.html" target="_blank" rel="nofollow" title="Wetter Offenburg">Wetter Offenburg</a></div><div id="wcom-50ce498070640e7cbe118dedcc4467c9-weather"></div><script type="text/javascript" src="//cs3.wettercomassets.com/woys/5/js/w.js"></script><script type="text/javascript">_wcomWidget({id: 'wcom-50ce498070640e7cbe118dedcc4467c9',location: 'DE0007926',format: '300x250',type: 'spaces'});</script></div>
+    </div>
+    <!--<div class="card">
+      <!-- <h3>Social Media</h3>
+      <p>Kommt auch noch was..</p>
+
+    </div>
+  -->
+  </div>
+</div>
+
+<div class="footer">
+  <hr>
+  <h1 class="fußzeile">Besuche uns auf unseren Servern!</h1>
+  <br>
+  <p><a href="https://www.gametracker.com/server_info/185.101.94.133:9987/" target="_blank"><img src="https://cache.gametracker.com/server_info/185.101.94.133:9987/b_560_95_1.png" alt="" width="560" height="95" border="0" /></a></p>
+  <br>
+  <p><a href="https://www.gametracker.com/server_info/185.101.94.133:2302/" target="_blank"><img src="http://cache.gametracker.com/server_info/185.101.94.133:2302/b_560_95_1.png" border="0" width="560" height="95" alt=""/></a></p>
+  <br>
+  <p><a href="https://www.gametracker.com/server_info/185.101.94.133:27015/" target="_blank"><img src="http://cache.gametracker.com/server_info/185.101.94.133:27015/b_560_95_1.png" border="0" width="560" height="95" alt=""/></a></p>
+  <br>
+  <p>Copyright © 2018 Tonnick Community</p>
+  </div>
+</body>
+</html>

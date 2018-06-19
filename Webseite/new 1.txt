@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="side">
+    <h2>Support</h2>
+    <h5>Kontaktiere uns bei Fragen oder Problemen!</h5>
+    <br>
+    <a href="ts3server://185.101.94.133?port=9987&channel=• Warte auf Support [ONLINE]" class="button"><span>TS³</span></a>
+    <br>
+    <a href="https://discord.gg/tV2DsYH" class="button"><span>Discord</span></a>
+    <br>
+    <a href="mailto:tonnickcommunity@gmail.com?subject=Kontaktanfrage" class="button"><span>E-Mail</span></a>
+    <br>
+    <br>
+    <h2>TeamSpeak³</h2>
+    <div>
+    <iframe src="http://cache.gametracker.com/components/html0/?host=185.101.94.133:9987&bgColor=333333&fontColor=CCCCCC&titleBgColor=222222&titleColor=FF9900&borderColor=555555&linkColor=FFCC00&borderLinkColor=222222&showMap=0&currentPlayersHeight=160&showCurrPlayers=1&showTopPlayers=0&showBlogs=0&width=300" frameborder="0" scrolling="no" width="500" height="348"></iframe>
+    </div>
+    <br>
+    <br>
+    <h2>Discord</h2>
+    <div>
+    <iframe src="https://discordapp.com/widget?id=351670759438942210&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="wcom-50ce498070640e7cbe118dedcc4467c9" class="wcom-default w300x250" style="border: 1px solid rgb(255, 0, 0); background-color: rgb(252, 252, 252); border-radius: 0px;"><link rel="stylesheet" href="//cs3.wettercomassets.com/woys/5/css/w.css" media="all"><div class="wcom-city"><a style="color:#000" href="https://www.wetter.com/deutschland/offenburg/DE0007926.html" target="_blank" rel="nofollow" title="Wetter Offenburg">Wetter Offenburg</a></div><div id="wcom-50ce498070640e7cbe118dedcc4467c9-weather"></div><script type="text/javascript" src="//cs3.wettercomassets.com/woys/5/js/w.js"></script><script type="text/javascript">_wcomWidget({id: 'wcom-50ce498070640e7cbe118dedcc4467c9',location: 'DE0007926',format: '300x250',type: 'spaces'});</script></div>
+  </div>
+  <div class="main">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
