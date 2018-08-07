@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Bitte geben Sie Ihren Benutzernamen und Ihr Passwort an."
+AuthUserfile "../htdocs/loginsection/.htpasswort"
+Require valid-user

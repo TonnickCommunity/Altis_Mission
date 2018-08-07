@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/css/standard.css" rel="stylesheet" type="text/css">
+<title>Teambereich</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <div>
+        <h1>Tonnick Serverteam</h1>
+        <p>Privater Bereich für Teammitglieder!</p>
+      </div>
+  </div>
+
+  <div id="navbar" class="navbar">
+	<a class="navright" href="/index.html"><span>Zurück</span></a>
+  </div>
+
+  <div class="parallax"></div>
+  
+  <div class="random">
+	<p>Hier kommt irgendwas hin.</p>
+  </div>
+  
+  <div class="parallax2"></div>
+  
+</body>
+
+<script>
+
+	  window.onscroll = function() {myFunction()};
+
+	  var navbar = document.getElementById("navbar");
+	  var sticky = navbar.offsetTop;
+
+	  function myFunction() {
+		if (window.pageYOffset >= sticky) {
+		  navbar.classList.add("sticky")
+		} else {
+		  navbar.classList.remove("sticky");
+		}
+	  }
+	  
+  </script>
+  
+</html>

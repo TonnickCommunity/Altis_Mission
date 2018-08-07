@@ -167,9 +167,11 @@ body, html {
     text-decoration: none;
 }
 
-/* Rechter link */
-.navbar a.right {
+/* Rechter link (Login)*/
+.navbar a.navright {
     float: right;
+    padding: 24px 25px;
+	font-size: 18px;
 }
 
 /* Farbe änder | NavBar */
