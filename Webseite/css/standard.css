@@ -153,6 +153,7 @@ body, html {
 
 /* Style | NavBar */
 .navbar {
+	box-shadow: 0px 4px 4px #111;
     overflow: hidden;
     background-color: #333;
 	z-index: 1000;
@@ -160,6 +161,8 @@ body, html {
 
 /* Sytle | NavBar Links */
 .navbar a {
+	font-size: 30px;
+	cursor: pointer;
     float: left;
     display: block;
     color: white;
@@ -179,6 +182,19 @@ body, html {
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+}
+
+/* Hintergrund für Inhalte */
+.contentbackground {
+	height: auto;
+	background-color: #333;
+	font-size: 36px;
+}
+
+/* Überschrift der einzelnen Abschnitte */
+.contentheadline {
+	text-align: center;
+	color: white;
 }
 
 /* Container */
@@ -257,27 +273,28 @@ body, html {
 }
 
 .content {
-  padding: 16px;
+	padding: 16px;
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .sticky + .content {
-  padding-top: 60px;
+	padding-top: 60px;
 }
 
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: grey;
+	font-size: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: grey;
 }
 
 .title {
@@ -437,28 +454,36 @@ button:hover, a:hover {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
     .column  {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column {
         width: 50%;
     }
-}
-
-
-@media screen and (max-width: 600px) {
-    .column  {
-        width: 100%;
-    }
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 @media screen and (max-width: 700px) {
     .row {
         flex-direction: column;
     }
+	
+	.column  {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+	  padding-top: 15px;
+  }
+  
+  .sidenav a {
+	  font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -466,4 +491,8 @@ button:hover, a:hover {
         float: none;
         width: 100%;
     }
+	
+	.navbutton {
+		float: left;
+	}
 }
