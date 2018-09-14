@@ -96,7 +96,7 @@ body, html {
 .columnregeln {
     float: center;
     width: 100%;
-    padding: 100px;
+    padding: 75px;
 }
 
 /* Button für Support */
@@ -479,6 +479,10 @@ button:hover, a:hover {
 	.column  {
         width: 100%;
     }
+	
+	.content {		
+		padding: 75px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -519,6 +523,7 @@ button:hover, a:hover {
 	
 	.content {
 		font-size: 30px;
+		padding: 60px;
 	}
 }
 
@@ -526,6 +531,10 @@ button:hover, a:hover {
     .content {
 		font-size: 25px;
 	}
+	
+	.columnregeln {
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -537,6 +546,12 @@ button:hover, a:hover {
     float: right;
     padding: 24px 25px;
 	font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.columnregeln {
+		padding: 10px 5px 10px 10px;
 	}
 }
 
