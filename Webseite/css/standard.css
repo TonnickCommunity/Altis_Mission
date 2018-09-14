@@ -1,8 +1,12 @@
 body, html {
-    height: 100%;
+	width: 100%;
+	height: 100%;
+    margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    margin: 0;
     font-size: 17px;
 }
 
@@ -18,7 +22,7 @@ body, html {
 
     background-image: url('../bilder/slideshow/test7.jpg');
 
-    height: 50%;
+	height: 50vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -29,7 +33,7 @@ body, html {
 .parallax2 {
     background-image: url('../bilder/slideshow/test2.jpg');
 
-    height: 100%;
+	height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -41,7 +45,8 @@ body, html {
 
     background-image: url('../bilder/slideshow/test10.jpg');
 
-    height: 100%;
+    width: 100%;
+	height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -53,7 +58,8 @@ body, html {
 
     background-image: url('../bilder/slideshow/test5.png');
 
-    height: 100%;
+    width: 100%;
+	height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -64,7 +70,8 @@ body, html {
 .parallax5 {
     background-image: url('../bilder/slideshow/test6.png');
 
-    height: 100%;
+    width: 100%;
+	height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -75,7 +82,8 @@ body, html {
 .parallax6 {
     background-image: url('../bilder/slideshow/test9.jpg');
 
-    height: 100%;
+    width: 100%;
+	height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -144,6 +152,7 @@ body, html {
     text-align: center;
     background: grey;
     color: white;
+	width: 100%;
 }
 
 /* Schriftgröße Head */
@@ -156,7 +165,8 @@ body, html {
 	box-shadow: 0px 4px 4px #111;
     overflow: hidden;
     background-color: #333;
-	z-index: 1000;
+	z-index: 500;
+	width: 100%;
 }
 
 /* Sytle | NavBar Links */
@@ -189,6 +199,7 @@ body, html {
 	height: auto;
 	background-color: #333;
 	font-size: 36px;
+	width: 100%;
 }
 
 /* Überschrift der einzelnen Abschnitte */
@@ -242,7 +253,7 @@ body, html {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     left: 0;
     background-color: #111;
@@ -280,6 +291,7 @@ body, html {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 500;
 }
 
 .sticky + .content {
@@ -424,6 +436,7 @@ button:hover, a:hover {
     border-radius: 6px;
 }
 
+/*Smart Devices*/
 @media screen and (max-width: 1500px) {
     .column  {
         width: 33%;
@@ -516,19 +529,18 @@ button:hover, a:hover {
 }
 
 @media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
-	
-	.navbutton {
-		float: left;
-	}
-	
 	.content {
 		font-size: 20px;
 	}
+	
+	.navbar a.navright {
+    float: right;
+    padding: 24px 25px;
+	font-size: 18px;
+	}
 }
+
+
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -539,4 +551,3 @@ button:hover, a:hover {
 	  font-size: 18px;
   }
 }
-
