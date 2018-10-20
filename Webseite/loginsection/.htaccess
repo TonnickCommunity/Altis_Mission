@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream
 AuthType Basic
 AuthName "Bitte geben Sie Ihren Benutzernamen und Ihr Passwort an."
 AuthUserfile "../htdocs/loginsection/.htpasswort"
+=======
+AuthType Basic
+AuthName "Bitte geben Sie Ihren Benutzernamen und Ihr Passwort an."
+AuthUserfile "../htdocs/loginsection/.htpasswort"
+>>>>>>> Stashed changes
 Require valid-user

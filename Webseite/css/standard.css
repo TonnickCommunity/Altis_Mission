@@ -1,5 +1,6 @@
 body, html {
 	width: 100%;
+<<<<<<< Updated upstream
 	height: 100%;
     margin: 0px;
 	padding: 0px;
@@ -8,17 +9,25 @@ body, html {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
     font-size: 17px;
+=======
+  margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  font-size: 17px;
+>>>>>>> Stashed changes
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.contact_h1 {
-	font-size: 50px;
-}
 
+/* Parallax */
 .parallax {
+<<<<<<< Updated upstream
 
     background-image: url('../bilder/slideshow/test7.jpg');
 
@@ -97,55 +106,100 @@ body, html {
     float: center;
     width: 100%;
     padding: 75px;
+=======
+  background-image: url('../bilder/background/bckgrnd1.jpg');
+	height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Button für Support */
+.parallax2 {
+  background-image: url('../bilder/background/bckgrnd2.jpg');
+	height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
+.parallax3 {
+  background-image: url('../bilder/background/bckgrnd3.jpg');
+	height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  background-image: url('../bilder/background/bckgrnd4.jpg');
+	height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax5 {
+  background-image: url('../bilder/background/bckgrnd5.jpg');
+	height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax6 {
+  background-image: url('../bilder/background/bckgrnd6.jpg');
+	height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+>>>>>>> Stashed changes
+}
+
+
+/* Header */
+.header {
+	padding: 1px 0 10px 0;
+	cursor: default;
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+  background: grey;
+  color: white;
+	width: 100%;
+}
+
+.header h1 {
+	padding: 10px 5px 5px 5px;
+  font-size: 40px;
+	font-weight: bold;
+}
+
+
+/* NavBar */
+.navbar {
+	box-shadow: 0px 7px 10px #030303;
+  overflow: hidden;
+  background-color: #333;
+	width: 100%;
+	z-index: 9999;
+}
+
+.navbar a {
+	font-size: 20px;
+	cursor: pointer;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 10px;
   text-decoration: none;
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  text-decoration: none;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-  text-decoration: none;
-}
-
-.button:hover span {
-  padding-right: 25px;
-  text-decoration: none;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-  text-decoration: none;
-}
-
+<<<<<<< Updated upstream
 /* Head | Logo */
 .header {
     padding: 10px;
@@ -187,13 +241,34 @@ body, html {
     padding: 24px 25px;
 	font-size: 18px;
 }
-
-/* Farbe änder | NavBar */
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+=======
+.navbar a.active {
+	background-color: green;
 }
 
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+>>>>>>> Stashed changes
+
+/* Content */
+.contentbackground {
+	color: white;
+	height: auto;
+	background-color: #333;
+	width: 100%;
+	padding: 16px 0 16px 0;
+}
+
+<<<<<<< Updated upstream
 /* Hintergrund für Inhalte */
 .contentbackground {
 	height: auto;
@@ -214,30 +289,33 @@ body, html {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
+=======
+.contentbackgroundfont {
+	font-size: 36px;
+>>>>>>> Stashed changes
 }
 
-/* erstellen der spalten */
-/* Sidebar | links */
-.side {
-    -ms-flex: 30%; /* IE10 */
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
+.contentheadline {
+	font-size: 50px;
+	text-align: center;
+	color: white;
+  padding: 16px;
+	margin: 16px;
+	font-family: sans-serif;
 }
 
-/* Main  */
-.main {
-    -ms-flex: 70%; /* IE10 */
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
+.contentsubheadline {
+	font-size: 40px;
+	text-align: left;
+	color: white;
+  padding: 16px;
+	margin: 16px;
+	font-family: sans-serif;
 }
 
-/* Img */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+.regeln {
+	padding: 32px;
+	font-size: 25px;
 }
 
 /* Fußzeile */
@@ -247,6 +325,7 @@ body, html {
     background: #ddd;
 }
 
+<<<<<<< Updated upstream
 /* Seitliche NavBar */
 
 .sidenav {
@@ -340,26 +419,30 @@ button:hover, a:hover {
 #main {
     transition: margin-left .5s;
     padding: 16px;
+=======
+.footerheadline {
+	font-size: 35px;
+	font-weight: 700;
+>>>>>>> Stashed changes
 }
 
-.column {
-    float: right;
-    width: 20%;
-    padding: 10px;
+.footercontent {
+	font-size: 11px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.login {
+	text-decoration: none;
+	float: right;
+	display: block;
+	color: black;
+	font-size: 11px;
 }
 
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+.login:hover {
+	color: #f00;
 }
 
+<<<<<<< Updated upstream
 .timeline::after {
     content: '';
     position: absolute;
@@ -546,6 +629,33 @@ button:hover, a:hover {
     float: right;
     padding: 24px 25px;
 	font-size: 18px;
+=======
+
+
+
+/* mediaquery */
+@media screen and (max-width: 525px) {
+	.footerheadline {
+		font-size: 30px;
+	}
+
+	.contentsubheadline {
+		font-size: 35px;
+	}
+
+	.regeln {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 455px) {
+	.contentsubheadline {
+		font-size: 32px;
+	}
+
+	.regeln {
+		font-size: 17px;
+>>>>>>> Stashed changes
 	}
 }
 

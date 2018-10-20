@@ -1,0 +1,61 @@
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.column {
+  float: right;
+  width: 33.33%;
+  margin: 32px 0 32px 0;
+}
+
+.card {
+  max-width: 300px;
+  min-height: 470px;
+	font-size: 18px;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 1);
+	margin: auto;
+	text-align: center;
+  font-weight: 300;
+	background-color: grey;
+  color: white;
+  padding: 16px;
+}
+
+.title {
+  color: black;
+  font-size: 50px;
+  text-shadow: 0 5px 5px #333;
+}
+
+.subtitle {
+  color: white;
+  padding: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.socialmedia {
+	padding: 16px;
+}
+
+.socialmedia a {
+	padding: 1px;
+}
+
+
+
+/* mediaquery */
+@media screen and (max-width: 1000px) {
+  .column{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .column{
+    width: 100%;
+  }
+}
