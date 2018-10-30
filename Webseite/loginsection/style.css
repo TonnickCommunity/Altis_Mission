@@ -1,0 +1,98 @@
+body, html {
+	height: 100%;
+  margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  background-image: url(../bilder/background/bckgrnd2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+span {
+  color:red;
+}
+
+h2 {
+  text-align: center;
+  border-radius:10px 10px 0 0;
+  margin:-10px -40px;
+  padding: 32px;
+}
+
+hr {
+  border:0;
+  border-bottom: 1px solid;
+  margin: 10px -40px;
+  margin-bottom: 30px;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 95%;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  padding: 10px 40px 25px;
+  background-color: #333;
+}
+
+input[type=text],input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  padding-left: 5px;
+  font-size: 20px;
+  background-color: #999;
+}
+
+input[type=submit] {
+  font-weight: 550;
+  width: 70%;
+  background-color: #1d1;
+  color: #fff;
+  border: 1px solid #1d1;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a {
+  color: #6495ed;
+}
+
+i {
+  color: #6495ed;
+}
+
+.zurueck {
+  float: right;
+  text-align: center;
+  width: 20%;
+  background-color: #d11;
+  color: #fff;
+  border: 1px solid #d11;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+img {
+  width: 25px;
+  margin: 7.25px;
+}
