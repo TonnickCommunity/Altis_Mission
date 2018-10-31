@@ -16,13 +16,13 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 // mysqli_connect() function opens a new connection to the MySQL server.
-$conn = mysqli_connect("localhost", "webseite", "WebsEiTe_ToC_2k18", "webseite");
+include('../connect.php');
 
 // SQL query to fetch information of registerd users and finds user match.
 $query = "SELECT username, password from login where username=? AND password=? LIMIT 1";
 
 // To protect MySQL injection for Security purpose
-$stmt = $conn->prepare($query);
+$stmt = $db->prepare($query);
 $stmt->bind_param("ss", $username, $password);
 $stmt->execute();
 $stmt->bind_result($username, $password);
@@ -36,7 +36,7 @@ if($stmt->fetch()) //fetching the contents of the row
 else {
        $error = "Username or Password is invalid";
      }
-mysqli_close($conn); // Closing Connection
+mysqli_close($db); // Closing Connection
 }
 }
 

@@ -1,40 +1,88 @@
-body {font-family: Arial, Helvetica, sans-serif;}
+body, html {
+	width: 100%;
+  margin: 0px;
+	padding: 0px;
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  font-size: 17px;
 }
 
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+	color: white;
 }
 
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.plus {
+	min-height: 240px;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+.kein_eintrag {
+	position: absolute;
+	left: 50%;
+	padding: 20px;
+	transform: translateX(-50%);
+}
+
+.supportfall {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  max-width: 1000px;
+  width: 95%;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  padding: 15px 13px;
+  background-color: #333;
+	margin: 30px 0 40px 0;
+}
+
+summary {
+  width: 100%;
+}
+
+details {
+  width: 100%;
+}
+
+table {
+	text-align: left;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.bold {
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+td {
+	vertical-align: top;
+}
+
+.first_column {
+  width: 100px;
+}
+
+.second_column {
+  width: 150px;
+}
+
+.third_column {
+	width: 600px;
+}
+
+.delete {
+	padding: 0;
+	float: right;
+	text-align: center;
+	width: auto;
+}
+
+.delete a {
+	background: #0d0;
+	padding: 4px 15px;
+	border-radius: 3px;
 }

@@ -48,7 +48,7 @@ hr {
 }
 
 .kontaktformular {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -128,19 +128,43 @@ i {
   border-radius: 5px;
 }
 
-img {
+.homeicon {
   width: 25px;
   margin: 7.25px;
 }
 
-.swal-overlay {
-	background-color: #000d;
+
+/* DankePage */
+.danke_div {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  padding: 10px 40px 0px;
+  background-color: #333;
 }
 
-.swal-modal {
-	background-color: #fff;
+.successimg {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	padding: 20px;
 }
 
-.swal-button {
-	background-color: #1d1;
+.danke_content {
+	text-align: center;
+	padding: 5px 35px 5px 35px;
+	font-size: 22px;
+}
+
+.infotext {
+	font-size: 15px;
+	text-align: center;
+	padding: 10px 5px 0px 5px;
+	margin-bottom: -10px;
 }
