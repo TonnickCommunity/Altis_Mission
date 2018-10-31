@@ -1,14 +1,10 @@
 <?php
 
 	// connect to database
-	$db = mysqli_connect("localhost", "webseite", "WebsEiTe_ToC_2k18", "webseite");
+	include('../connect.php');
 
 	// insert a quote if submit button is clicked
 	if (isset($_POST['submit'])) {
-
-			echo '<script type="text/javascript">';
-			echo 'setTimeout(function () { swal("Danke!","Deine Kontaktanfrage wurde erfolgreich übermittelt!","success", {saveMode:true});';
-			echo '}, 100);</script>';
 
 			$vorname = $_POST['vorname'];
 			$nachname = $_POST['nachname'];
@@ -19,6 +15,8 @@
 			$sql = "INSERT INTO formular (vorname, nachname, email, betreff, nachricht) VALUES ('$vorname', '$nachname', '$email', '$betreff', '$nachricht')";
 
 			mysqli_query($db, $sql);
+
+			echo '<script type="text/javascript"> window.location = "danke.php" </script>';
 		}
 ?>
 
@@ -59,7 +57,7 @@
 					<button type="submit" name="submit" id="add_btn" class="submit" href="#">Daten absenden</button>
 				</tr>
 				<tr>
-					<a class="zurueck" href="../index.php"><img src="../bilder/homeicon.png" alt=""></a>
+					<a class="zurueck" href="../index.php"><img class="homeicon" src="../bilder/homeicon.png" alt=""></a>
 				</tr>
 			</table>
 
